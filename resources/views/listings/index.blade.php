@@ -11,4 +11,7 @@
     @if (count($listings) == 0)
         <h2 class="text-center text-gray-500 font-bold">No listings found!</h2>
     @endif
+    <div class="p-5">
+        {{ $listings->links() }}
+    </div>
 @endsection
